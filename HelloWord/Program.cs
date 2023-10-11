@@ -1,10 +1,27 @@
-﻿namespace HelloWord
+﻿using System;
+
+     class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        Console.WriteLine("Bitwese AND Tuth Table");
+        Console.WriteLine("");
+        Console.WriteLine("-------------------------");
+        Console.WriteLine("|A|B|A& B|");
+        Console.WriteLine("|----|----|---|");
+        for(int A=0;A<=1;A++)
         {
-            Console.WriteLine("Hello, World!");
+            for(int B = 0; B <= 1; B++)
+            {
+                int result = A & B;
+                Console.WriteLine($"|{A}|{B}|{result} |");
+            }
         }
+
+        Console.WriteLine("-------------------");
+
     }
 }
+
+
+
